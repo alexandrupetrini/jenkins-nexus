@@ -1,0 +1,39 @@
+version: "3.4"
+
+services:
+  nexus:
+    tty: true
+    container_name: nexus_compose
+    image: "sonatype/nexus3"
+    restart: unless-stopped
+    ports:
+      - "8182:8081"
+    volumes:
+      - nexus_data:/nexus_data
+    networks:
+      - jenkins-nexus
+
+  jenkins:
+    container_name: jenkins_compose
+    tty: true
+    image: "jenkins/jenkins"
+    restart: unless-stopped
+    ports:
+      - "8181:8080"
+      - "5001:5000"
+    volumes:
+      - jenkins_home:/nexus_data
+    depends_on:
+      - nexus
+    networks:
+      - jenkins-nexus
+
+volumes:
+  jenkins_home:
+    external: true
+  nexus_data:
+    external: true
+
+networks:
+  jenkins-nexus:
+    driver: bridge
