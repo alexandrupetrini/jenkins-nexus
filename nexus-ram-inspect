@@ -1,0 +1,257 @@
+[
+    {
+        "Id": "91c4c1354250bf73d47b1d1455c8c415805135580faaaa5c9b490a1af48a21bc",
+        "Created": "2020-10-19T08:01:54.435283889Z",
+        "Path": "sh",
+        "Args": [
+            "-c",
+            "${SONATYPE_DIR}/start-nexus-repository-manager.sh"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2020-11-02T12:45:18.358139556Z",
+            "FinishedAt": "2020-11-02T12:54:56.0886078Z"
+        },
+        "Image": "sha256:0ffbaec5b09853d413deb728caa77e6b0c1a2091a7bb6b0ffe09695669a7a28f",
+        "ResolvConfPath": "/var/lib/docker/containers/91c4c1354250bf73d47b1d1455c8c415805135580faaaa5c9b490a1af48a21bc/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/91c4c1354250bf73d47b1d1455c8c415805135580faaaa5c9b490a1af48a21bc/hostname",
+        "HostsPath": "/var/lib/docker/containers/91c4c1354250bf73d47b1d1455c8c415805135580faaaa5c9b490a1af48a21bc/hosts",
+        "LogPath": "/var/lib/docker/containers/91c4c1354250bf73d47b1d1455c8c415805135580faaaa5c9b490a1af48a21bc/91c4c1354250bf73d47b1d1455c8c415805135580faaaa5c9b490a1af48a21bc-json.log",
+        "Name": "/nexus-ram",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {
+                "8081/tcp": [
+                    {
+                        "HostIp": "",
+                        "HostPort": "8081"
+                    }
+                ]
+            },
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "CapAdd": null,
+            "CapDrop": null,
+            "Capabilities": null,
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": false,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "ConsoleSize": [
+                0,
+                0
+            ],
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": null,
+            "BlkioDeviceWriteBps": null,
+            "BlkioDeviceReadIOps": null,
+            "BlkioDeviceWriteIOps": null,
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "KernelMemory": 0,
+            "KernelMemoryTCP": 0,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": false,
+            "PidsLimit": null,
+            "Ulimits": null,
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/bfa4b4efbccff29cddedd1e1c76cc0e649b666e46f1516ee5ecd587d8547e75f-init/diff:/var/lib/docker/overlay2/0988f8db33a819975a8411d6d1b75c918612e05945b1e87ded0c5a46fd313309/diff:/var/lib/docker/overlay2/f3a0d53d2a07a40e9fca748cf5d7808d0f01b46b976ae540aae26a3fa0ea2f76/diff:/var/lib/docker/overlay2/774607f2a15f397a4e1872754a857b45d30848e22d08a8fff97bd7ffe1214c0b/diff:/var/lib/docker/overlay2/e64a68b8e14353b5604e1b676d1d2af1b3d2a335a7dcb92ebbe3d2b8c2107be8/diff",
+                "MergedDir": "/var/lib/docker/overlay2/bfa4b4efbccff29cddedd1e1c76cc0e649b666e46f1516ee5ecd587d8547e75f/merged",
+                "UpperDir": "/var/lib/docker/overlay2/bfa4b4efbccff29cddedd1e1c76cc0e649b666e46f1516ee5ecd587d8547e75f/diff",
+                "WorkDir": "/var/lib/docker/overlay2/bfa4b4efbccff29cddedd1e1c76cc0e649b666e46f1516ee5ecd587d8547e75f/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "87dd43824f27f77e9933fee9a7df5efd15c4cb7287945c31c3b459615a11034f",
+                "Source": "/var/lib/docker/volumes/87dd43824f27f77e9933fee9a7df5efd15c4cb7287945c31c3b459615a11034f/_data",
+                "Destination": "/nexus-data",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "91c4c1354250",
+            "Domainname": "",
+            "User": "nexus",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "8081/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "INSTALL4J_ADD_VM_PARAMS=-Xms1g -Xmx1g -XX:MaxDirectMemorySize=1g",
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "container=oci",
+                "SONATYPE_DIR=/opt/sonatype",
+                "NEXUS_HOME=/opt/sonatype/nexus",
+                "NEXUS_DATA=/nexus-data",
+                "NEXUS_CONTEXT=",
+                "SONATYPE_WORK=/opt/sonatype/sonatype-work",
+                "DOCKER_TYPE=rh-docker"
+            ],
+            "Cmd": [
+                "sh",
+                "-c",
+                "${SONATYPE_DIR}/start-nexus-repository-manager.sh"
+            ],
+            "Image": "sonatype/nexus3",
+            "Volumes": {
+                "/nexus-data": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": null,
+            "OnBuild": null,
+            "Labels": {
+                "architecture": "x86_64",
+                "build-date": "2020-09-01T19:43:46.041620",
+                "com.redhat.build-host": "cpt-1008.osbs.prod.upshift.rdu2.redhat.com",
+                "com.redhat.component": "ubi8-container",
+                "com.redhat.license_terms": "https://www.redhat.com/en/about/red-hat-end-user-license-agreements#UBI",
+                "com.sonatype.license": "Apache License, Version 2.0",
+                "com.sonatype.name": "Nexus Repository Manager base image",
+                "description": "The Nexus Repository Manager server           with universal support for popular component formats.",
+                "distribution-scope": "public",
+                "io.k8s.description": "The Nexus Repository Manager server           with universal support for popular component formats.",
+                "io.k8s.display-name": "Nexus Repository Manager",
+                "io.openshift.expose-services": "8081:8081",
+                "io.openshift.tags": "Sonatype,Nexus,Repository Manager",
+                "maintainer": "Sonatype <support@sonatype.com>",
+                "name": "Nexus Repository Manager",
+                "release": "3.28.0",
+                "run": "docker run -d --name NAME           -p 8081:8081           IMAGE",
+                "stop": "docker stop NAME",
+                "summary": "The Nexus Repository Manager server           with universal support for popular component formats.",
+                "url": "https://sonatype.com",
+                "vcs-ref": "663db861f0ff7a9c526c1c169a62c14c01a32dcc",
+                "vcs-type": "git",
+                "vendor": "Sonatype",
+                "version": "3.28.0-01"
+            }
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "250c0c8c3661e4655d71e7ddb15c72d05939a4481db14dd1fedba92569e4d36f",
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "Ports": {},
+            "SandboxKey": "/var/run/docker/netns/250c0c8c3661",
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "NetworkID": "2f7a475d78a8b250ecb04306d42a4e107d2e3a22832690e630bd22a9c0db95ec",
+                    "EndpointID": "",
+                    "Gateway": "",
+                    "IPAddress": "",
+                    "IPPrefixLen": 0,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "MacAddress": "",
+                    "DriverOpts": null
+                }
+            }
+        }
+    }
+]
