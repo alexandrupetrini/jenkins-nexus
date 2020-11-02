@@ -3,7 +3,7 @@ version: "3.4"
 services:
   nexus:
     tty: true
-    container_name: nexus_compose
+    container_name: nexus-ram
     image: "sonatype/nexus3"
     restart: unless-stopped
     environment:
@@ -16,7 +16,7 @@ services:
       - jenkins-nexus
 
   jenkins:
-    container_name: jenkins_compose
+    container_name: jenkins
     tty: true
     image: "jenkins/jenkins"
     restart: unless-stopped
