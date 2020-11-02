@@ -9,7 +9,7 @@ services:
     environment:
       - INSTALL4J_ADD_VM_PARAMS=-Xms1g -Xmx1g -XX:MaxDirectMemorySize=1g,
     ports:
-      - "8182:8081"
+      - "8081:8081"
     volumes:
       - nexus_data:/nexus-data
     networks:
@@ -21,8 +21,8 @@ services:
     image: "jenkins/jenkins"
     restart: unless-stopped
     ports:
-      - "8181:8080"
-      - "5001:5000"
+      - "8080:8080"
+      - "5000:5000"
     volumes:
       - jenkins_home:/var/jenkins_home
     depends_on:
