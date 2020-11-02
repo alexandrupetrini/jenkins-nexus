@@ -9,7 +9,7 @@ services:
     ports:
       - "8182:8081"
     volumes:
-      - nexus_data:/nexus_data
+      - nexus_data:/nexus-data
     networks:
       - jenkins-nexus
 
@@ -22,7 +22,7 @@ services:
       - "8181:8080"
       - "5001:5000"
     volumes:
-      - jenkins_home:/jenkins_home
+      - jenkins_home:/var/jenkins_home
     depends_on:
       - nexus
     networks:
