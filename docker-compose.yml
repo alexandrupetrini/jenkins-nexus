@@ -22,7 +22,7 @@ services:
       - "8181:8080"
       - "5001:5000"
     volumes:
-      - jenkins_home:/nexus_data
+      - jenkins_home:/jenkins_home
     depends_on:
       - nexus
     networks:
